@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>\
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="./AboutMe.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="Maincontainer" id="MainID" >
+        <h1 class="Head1">GALAXYPIPSFX</h1>
+        <p>Trade with Style</p>
+        <button class="Button" onclick="clickeeme()">Click Me</button>
+    </div>
+    <div class="Aboutmesection" id="AboutmesectionID">
+        <h1 class="head2">ABOUT ME</h1>
+        <p>I’m Peter Ananwude — a passionate software developer and aspiring data analyst with a strong interest in technology, problem-solving, and building useful digital solutions.I’m continuously developing my skills in software development, data analysis, and web technologies through hands-on projects and practical learning. I enjoy turning ideas into functional, user-friendly experiences while constantly challenging myself to learn and improve. My goal is to grow into a highly skilled technology professional, work on meaningful projects, and create digital solutions that make a real impact.</p>
+        <div class="aboutmeawsome">
+           <a href=""><i class=" awesomegigs fa-brands fa-linkedin"></i></a>
+           <a href=""><i class=" awesomegigs fa-brands fa-instagram"></i></a>
+           <a href=""><i class=" awesomegigs fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+
+*{
+ box-sizing: border-box;
+ font-family: "poppins";
+}
+
+
+
+body,html{
+    margin: 0;
+    padding: 0;
+ }   
+
+
+ .Maincontainer{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+</style>
+
+<script>
+
+function clickeeme(){
+    document.body.style.background = 'url("https://media1.giphy.com/media/VJxl5j4GuyEQX7Seoc/source.gif")'
+    document.getElementById("MainID").style.visibility = "hidden"
+    document.getElementById("AboutmesectionID").style.visibility = "hidden"
+}
+
+</script>

@@ -1,0 +1,33 @@
+:root{
+  --secondary: rgb(6, 96, 146);
+}
+
+
+#MainID{
+    text-align: center;
+    background-image: url("./Imagess/myfxphoto.avif");
+    background-position: center top;
+    background-size: cover;
+    color: white;
+    padding-top: 150px;
+}
+
+
+.Head1{
+    margin: -9px;
+}
+
+.Button{
+    font-size: bold;
+    padding: 10px;
+    border-radius: 15px;
+   
+}
+
+.Button:hover{
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: var(--secondary);
+     color: white;
+}

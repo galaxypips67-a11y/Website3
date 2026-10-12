@@ -1,0 +1,31 @@
+.Aboutmesection{
+    margin: 0 auto;
+    width: 65%;
+}
+
+#AboutmesectionID{
+    text-align: center;
+    padding-top: 80px;
+}
+
+.head2{
+    margin: -9px;
+}
+
+.aboutmeawsome{
+    padding-top: 20px;
+}
+
+.awesomegigs{
+    padding: 30px;
+    font-size: 25px;
+}
+
+.aboutmeawsome a{
+    color: black;
+}
+
+.awesomegigs:hover{
+    cursor: pointer;
+    color: var(--secondary);
+}
