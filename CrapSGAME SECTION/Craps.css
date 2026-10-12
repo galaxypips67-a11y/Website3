@@ -1,0 +1,88 @@
+.CrapsMainsection{
+    width: 100vw;
+    height: 100vh;
+}
+
+#CrapsectionID{
+    background-image: url("../images/images\ \(2\).jpg");
+    background-position: center top;
+    background-size: cover;
+    color: white;
+    margin-top: 80px;
+}
+
+.Crapsdiv1{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.Crapsection{
+    border: solid white 2px;
+    width: min(500px, 80vw);
+    height: min(350px, 70vw);
+    margin: 70px auto 0 auto;
+}
+
+#CrapssubID{
+    background-image: url("../images/CrapsTable.avif");
+    background-position: center top;
+    background-size: cover;
+}
+
+.Crapsinputsection{
+    text-align: center;
+}
+
+.CrapsEntersection{
+    padding-top: 17px;
+}
+.Inputsection{
+    margin-top: 30px;
+}
+
+
+.Inputsection{
+    border: none;
+    background: none;
+    border-bottom: white solid 2px;
+    text-align: center;
+    color: white;
+}
+
+.Inputsection{
+    outline: none;
+}
+
+
+.Buttonn{
+    margin-top: 20px;
+    font-size: bold;
+}
+
+.Buttonn:hover{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Main-Game-section{
+    display: none;
+}
+
+.Crapssubsection{
+    text-align: center;
+}
+
+
+.setingmoneysections{
+    margin-top: 70px;
+    font-size: 30px;
+}
+
+.Welcomeuser{
+    padding-top: 20px;
+}
+
+.Roundssettings{
+    padding-top: 30px;
+}
+

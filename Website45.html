@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./CrapSGAME SECTION/Craps.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <link rel="stylesheet" href="./AboutMe.css">
     <link rel="stylesheet" href="./style.css">
@@ -25,6 +26,24 @@
            <a href=""><i class=" awesomegigs fa-brands fa-x-twitter"></i></a>
         </div>
     </div>
+    <div class="CrapsMainsection" id="CrapsectionID">
+        <div class="Crapsdiv1">CRAPS CASINO GAME</div>
+        <div class="Crapsection" id="CrapssubID">
+            <div class="Crapsinputsection" id="CrapsIDsection">
+                <div class="CrapsEntersection">Enter Username</div>
+                <input class="Inputsection" id="InputID">
+                <div class="Buttonn" onclick="Continue()">Continue</div>
+            </div>
+            <div class="Main-Game-section" id="MainsectionID">
+                <div class="Crapssubsection">
+                    <div class="Welcomeuser">Welcome, <span id="Crapswelcome"></span></div>
+                    <div class="setingmoneysections">$ <span id="CrapsMoneypane"></span></div>
+                    <div class="Roundssettings">Rounds : <span id="Craproundsets"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
 
@@ -53,12 +72,23 @@ body,html{
 
 </style>
 
-<script>
 
+
+
+<script src="./CrapSGAME SECTION/craps.js">
+
+
+
+</script>
+
+<script>
+let userid = ""
 function clickeeme(){
-    document.body.style.background = 'url("https://media1.giphy.com/media/VJxl5j4GuyEQX7Seoc/source.gif")'
+    uerid = document.body.style.background = 'url("https://media1.giphy.com/media/VJxl5j4GuyEQX7Seoc/source.gif")'
     document.getElementById("MainID").style.visibility = "hidden"
     document.getElementById("AboutmesectionID").style.visibility = "hidden"
 }
+
+
 
 </script>
