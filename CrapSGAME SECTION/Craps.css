@@ -18,8 +18,8 @@
 
 .Crapsection{
     border: solid white 2px;
-    width: min(500px, 80vw);
-    height: min(350px, 70vw);
+    width: min(700px, 80vw);
+    height: min(500px, 57vw);
     margin: 70px auto 0 auto;
 }
 
