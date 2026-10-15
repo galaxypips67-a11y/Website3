@@ -86,12 +86,12 @@
 
 
 .setingmoneysections{
-    margin-top: 70px;
+    margin-top: calc(var(--height-scale)*0.09);
     font-size: 30px;
 }
 
 .Welcomeuser{
-    padding-top: 20px;
+    padding-top: calc(var(--height-scale)*0.03)
 }
 
 .Roundssettings{
