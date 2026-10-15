@@ -42,13 +42,14 @@
 
 .Crapsinputsection{
     text-align: center;
+   
 }
 
 .CrapsEntersection{
     padding-top: 17px;
 }
 .Inputsection{
-    margin-top: 100px;
+     margin-top: calc(var(--height-scale)*0.1);
 }
 
 
