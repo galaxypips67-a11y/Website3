@@ -1,3 +1,12 @@
+:root{
+    --width-scale:  min(700px, 80vw);
+    --height-scale: calc(var(--width-scale)*0.714);
+    --gametitle-size:  calc(var(--height-scale)*0.06);
+    --title-marginbottom: calc(var(--height-scale)*0.1)
+}   
+
+
+
 .CrapsMainsection{
     width: 100vw;
     height: 100vh;
@@ -13,14 +22,16 @@
 
 .Crapsdiv1{
     text-align: center;
-    padding-top: 10px;
+    margin-bottom: var(--title-marginbottom) ;
+    font-size: var(--gametitle-size);
+    margin-top: calc((100vh- var(--gametitle-size) - var(--title-marginbottom) - var(--height-scale))/2);
 }
 
 .Crapsection{
     border: solid white 2px;
-    width: min(700px, 80vw);
-    height: min(500px, 57vw);
-    margin: 70px auto 0 auto;
+    width:var(--width-scale);
+    height:var(--height-scale);
+    margin: 0 auto;
 }
 
 #CrapssubID{
@@ -37,7 +48,7 @@
     padding-top: 17px;
 }
 .Inputsection{
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
 
