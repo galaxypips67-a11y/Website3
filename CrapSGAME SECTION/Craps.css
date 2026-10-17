@@ -32,13 +32,14 @@
     width:var(--width-scale);
     height:var(--height-scale);
     margin: 0 auto;
-}
-
-#CrapssubID{
+    position: relative;
     background-image: url("../images/CrapsTable.avif");
     background-position: center top;
     background-size: cover;
 }
+
+
+
 
 .Crapsinputsection{
     text-align: center;
@@ -74,13 +75,14 @@
 }
 
 .Buttonn:hover{
-    font-size: var(--gametitle-size);
+    font-size: 20px;
     cursor: pointer;
 }
 
 .Main-Game-section{
     display: none;
-    margin-top: calc(var(--height-scale)*0.08);
+    height: 100%;
+    
 }
 
 .Crapssubsection{
@@ -101,3 +103,11 @@
     padding-top:  calc(var(--height-scale)*0.10);
 }
 
+.Craps-Round-Manager{
+    position: absolute;
+    bottom:calc(var(--height-scale)*0.06);
+    text-align: center;
+    border: solid 2px blue;
+    font-size: calc(var(--height-scale)*0.06);
+    width: 100%;
+}
