@@ -1,8 +1,8 @@
 :root{
     --width-scale:  min(700px, 80vw);
     --height-scale: calc(var(--width-scale)*0.714);
-    --gametitle-size:  calc(var(--height-scale)*0.06);
-    --title-marginbottom: calc(var(--height-scale)*0.1)
+    --gametitle-size: clamp(16px, calc(var(--height-scale) * 0.06), 30px);
+    --title-marginbottom: calc(var(--height-scale)*0.1);
 }   
 
 
@@ -17,12 +17,12 @@
     background-position: center top;
     background-size: cover;
     color: white;
-    margin-top: 80px;
+    margin-top: calc(var(--height-scale)*0.25);
 }
 
 .Crapsdiv1{
     text-align: center;
-    margin-bottom: var(--title-marginbottom) ;
+    margin-bottom: var(--title-marginbottom);
     font-size: var(--gametitle-size);
     margin-top: calc((100vh- var(--gametitle-size) - var(--title-marginbottom) - var(--height-scale))/2);
 }
@@ -42,14 +42,14 @@
 
 .Crapsinputsection{
     text-align: center;
-   
+    margin: calc(var(--height-scale)*0.08);   
 }
 
 .CrapsEntersection{
-    padding-top: 17px;
+    padding-top: calc(var(--height-scale)*0.01);
 }
 .Inputsection{
-     margin-top: calc(var(--height-scale)*0.1);
+     margin-top: calc(var(--height-scale)*0.05);
 }
 
 
@@ -59,6 +59,8 @@
     border-bottom: white solid 2px;
     text-align: center;
     color: white;
+    margin: 20px 0;
+     margin-top: calc(var(--height-scale)*0.07);
 }
 
 .Inputsection{
@@ -67,17 +69,18 @@
 
 
 .Buttonn{
-    margin-top: 20px;
+    margin-top: calc(var(--height-scale)*0.02);
     font-size: bold;
 }
 
 .Buttonn:hover{
-    font-size: 20px;
+    font-size: var(--gametitle-size);
     cursor: pointer;
 }
 
 .Main-Game-section{
     display: none;
+    margin-top: calc(var(--height-scale)*0.08);
 }
 
 .Crapssubsection{
@@ -87,7 +90,7 @@
 
 .setingmoneysections{
     margin-top: calc(var(--height-scale)*0.09);
-    font-size: 30px;
+    font-size: var(--gametitle-size);
 }
 
 .Welcomeuser{
@@ -95,6 +98,6 @@
 }
 
 .Roundssettings{
-    padding-top: 30px;
+    padding-top:  calc(var(--height-scale)*0.10);
 }
 

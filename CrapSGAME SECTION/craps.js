@@ -12,6 +12,11 @@ const CrapswelcomeuserID = "Crapswelcome"
 const setttingmoney = 1000
 const setttingrounds = 0
 
+//IN-GAME VARIABLES
+let CurrentMoneys = setttingmoney
+let currentRounds = setttingrounds
+
+//GRAPS GAME VARIABLES
 let Crapsuserinput = ""
 
 //CRAPS GAME SECTION
@@ -45,8 +50,10 @@ function ShowCrapssection(){
 
 function Crapwelcomeuser (){
     document.getElementById(CrapswelcomeuserID).innerHTML = Crapsuserinput
-      moneysettings(setttingmoney)
-      roundsettings(setttingrounds)
+      CurrentMoneys = setttingmoney
+      currentRounds = setttingrounds
+      moneysettings(CurrentMoneys)
+      roundsettings(currentRounds)
 
 }
 
