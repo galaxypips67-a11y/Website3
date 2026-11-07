@@ -1,5 +1,5 @@
 :root{
-    --width-scale:  min(700px, 80vw);
+    --width-scale:  min(700px, 80vw,80vh);
     --height-scale: calc(var(--width-scale)*0.714);
     --gametitle-size: clamp(16px, calc(var(--height-scale) * 0.06), 30px);
     --title-marginbottom: calc(var(--height-scale)*0.1);
@@ -24,7 +24,7 @@
     text-align: center;
     margin-bottom: var(--title-marginbottom);
     font-size: var(--gametitle-size);
-    margin-top: calc((100vh- var(--gametitle-size) - var(--title-marginbottom) - var(--height-scale))/2);
+   padding-top: calc(var(--height-scale)*0.20);
 }
 
 .Crapsection{
@@ -87,6 +87,7 @@
 
 .Crapssubsection{
     text-align: center;
+    padding-top: calc(var(--height-scale)*0.10);
 }
 
 
@@ -100,14 +101,58 @@
 }
 
 .Roundssettings{
-    padding-top:  calc(var(--height-scale)*0.10);
+    padding-top:  calc(var(--height-scale)*0.01);
 }
 
 .Craps-Round-Manager{
     position: absolute;
-    bottom:calc(var(--height-scale)*0.06);
+    bottom:calc(var(--height-scale)*0.03);
     text-align: center;
-    border: solid 2px blue;
-    font-size: calc(var(--height-scale)*0.06);
+    font-size: calc(var(--height-scale)*0.04);
     width: 100%;
 }
+
+
+.Roll-dice{
+    text-align: center;
+    font-size: calc(var(--height-scale)*0.04);
+    margin: 0 auto;
+    width: fit-content;
+    padding-top: calc(var(--height-scale)*0.14);
+}
+
+.Roll-dice-container{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.Craps-Round-Grid{
+    display: grid;
+    grid-template-columns: 33% auto 33%;
+    border: 1px solid white;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 5px;
+   
+}
+
+
+.CrapsUserssMoney{
+    border-left: white solid 1px;
+    border-right: 1px solid white;
+}
+
+.Craps-change-button{
+    padding: calc(var(--height-scale)*0.03);
+}
+
+.Craps-change-button:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Craps-oddeven-button{
+    cursor: pointer;
+    font-weight: bold;
+}
+

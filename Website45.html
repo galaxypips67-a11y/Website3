@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./CrapSGAME SECTION/utilis.css">
     <link rel="stylesheet" href="./CrapSGAME SECTION/Craps.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <link rel="stylesheet" href="./AboutMe.css">
@@ -40,12 +41,24 @@
                     <div class="setingmoneysections">$ <span id="CrapsMoneypane"></span></div>
                     <div class="Roundssettings">Rounds : <span id="Craproundsets"></span></div>
                 </div>
+                <div class="Roll-dice non-select">
+                  <div class="Roll-dice-container"> Roll Dice  <i class="fa-sharp-duotone fa-solid fa-dice"></i></div>
+                </div>
                 <div class="Craps-Round-Manager">
-                    Round Setup Pane Here
+                    <div class="Craps-Round-Grid non-select">
+                    <div id="EVEN" class="Craps-oddeven-button" onclick="beteven()">EVEN</div>
+                     <div class="CrapsUserssMoney">
+                    <span class="Craps-change-button" onclick="decreasebett()">-</span>
+                    <span id="CrapsuserBet">$100</span>
+                    <span    class="Craps-change-button"  onclick="increasebett()">+</span>
+                   </div>
+                   <div id="ODD" class="Craps-oddeven-button" onclick="betodd()">ODD</div>
+                   
+                    </div>
+                   
                 </div>
             </div>
         </div>
-    </div>
 
 </body>
 </html>
