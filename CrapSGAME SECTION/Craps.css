@@ -121,7 +121,7 @@
     padding-top: calc(var(--height-scale)*0.14);
 }
 
-.Roll-dice-container{
+.Roll-dice-container:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
