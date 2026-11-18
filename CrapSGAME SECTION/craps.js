@@ -118,10 +118,21 @@ function setmoney(bett){
 
 
 function  rolldice(){
+    formatdicerolled()
         document.getElementById(crapsrolldicenodisplay ).style.display = "none"
     const diceroll = document.getElementById( CrapsRolldiceanimationns)
        rollADie({ element:diceroll, numberOfDice: 2, callback:processresult, delay:100000 });
 }
+
+
+function formatdicerolled(){
+         const vw = window.innerWidth*0.8
+         const vh = window.innerHeight*0.8
+         const widthscale = Math.min(700,vw,vh)
+         const heightscale = widthscale * 0.714
+         const scale = heightscale/367.8528
+         document.getElementById(CrapsRolldiceanimationns).style.transform = "scale(" + scale + ")"
+      }
 
 
 function processresult(diceresult){

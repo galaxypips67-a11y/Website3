@@ -153,6 +153,6 @@
 }
 
 #Craps-rolldice-animation{
-    margin-top: calc(var(--height-scale)*-0.10);
+    margin-top: calc(var(--height-scale)*-0.13);
       margin-left: calc(var(--height-scale)*-0.20)
 }
