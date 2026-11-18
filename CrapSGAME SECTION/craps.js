@@ -7,6 +7,7 @@ const setCrapsRounds = "Craproundsets"
 const CrapswelcomeuserID = "Crapswelcome"
 const CrapuserBetMoney = "CrapsuserBet"
 const CrapsRolldiceanimationns ="Craps-rolldice-animation"
+const crapsrolldicenodisplay = "Craps-Rolldice-button"
 
 
 //Graps Game settings
@@ -117,8 +118,9 @@ function setmoney(bett){
 
 
 function  rolldice(){
+        document.getElementById(crapsrolldicenodisplay ).style.display = "none"
     const diceroll = document.getElementById( CrapsRolldiceanimationns)
-       rollADie({ element:diceroll, numberOfDice: 2, callback:processresult });
+       rollADie({ element:diceroll, numberOfDice: 2, callback:processresult, delay:100000 });
 }
 
 

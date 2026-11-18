@@ -92,12 +92,8 @@
 
 
 .setingmoneysections{
-    margin-top: calc(var(--height-scale)*0.09);
+    margin-top: calc(var(--height-scale)*0.04);
     font-size: var(--gametitle-size);
-}
-
-.Welcomeuser{
-    padding-top: calc(var(--height-scale)*0.03)
 }
 
 .Roundssettings{
@@ -118,7 +114,7 @@
     font-size: calc(var(--height-scale)*0.04);
     margin: 0 auto;
     width: fit-content;
-    padding-top: calc(var(--height-scale)*0.14);
+    padding-top: calc(var(--height-scale)*0.05);
 }
 
 .Roll-dice-container:hover{
@@ -156,3 +152,7 @@
     font-weight: bold;
 }
 
+#Craps-rolldice-animation{
+    margin-top: calc(var(--height-scale)*-0.10);
+      margin-left: calc(var(--height-scale)*-0.20)
+}
