@@ -124,8 +124,9 @@ function  rolldice(){
        rollADie({ element:diceroll, numberOfDice: 2, callback:processresult, delay:100000 });
 }
 
-
+window.addEventListener("resize", formatdicerolled)
 function formatdicerolled(){
+          console.log("resized")
          const vw = window.innerWidth*0.8
          const vh = window.innerHeight*0.8
          const widthscale = Math.min(700,vw,vh)
