@@ -62,10 +62,9 @@ function ShowCrapssection(){
 
 function Crapwelcomeuser (){
     document.getElementById(CrapswelcomeuserID).innerHTML = Crapsuserinput
-      CurrentMoneys = setttingmoney
-      currentRounds = setttingrounds
-      moneysettings(CurrentMoneys)
-      roundsettings(currentRounds)
+     
+      moneysettings(setttingmoney)
+      roundsettings(setttingrounds)
        beteven()
        setmoney(MinBet)
 
@@ -74,11 +73,13 @@ function Crapwelcomeuser (){
 
 
 function moneysettings(money){
+      CurrentMoneys = money
     document.getElementById(setCrapsMoney).innerHTML = money
 }
 
 
 function roundsettings(rounds){
+    currentRounds = rounds
     document.getElementById(setCrapsRounds).innerHTML = rounds
 }
 
@@ -121,7 +122,7 @@ function  rolldice(){
     formatdicerolled()
         document.getElementById(crapsrolldicenodisplay ).style.display = "none"
     const diceroll = document.getElementById( CrapsRolldiceanimationns)
-       rollADie({ element:diceroll, numberOfDice: 2, callback:processresult, delay:100000 });
+       rollADie({ element:diceroll, numberOfDice: 2, callback:delayedprocessresult, delay:100000 });
 }
 
 window.addEventListener("resize", formatdicerolled)
@@ -135,7 +136,22 @@ function formatdicerolled(){
          document.getElementById(CrapsRolldiceanimationns).style.transform = "scale(" + scale + ")"
       }
 
+ function delayedprocessresult(diceresult){
+    setTimeout(function() { processresult(diceresult); }, 2000);
+    }
 
 function processresult(diceresult){
-    console.log(diceresult)
+    const sum= diceresult.reduce((partialSum, a) => partialSum + a, 0)
+     let diceResult = bet.Even   
+     if(sum % 2 === 1){
+       diceResult = bet.Odd
+     }
+  roundsettings(currentRounds + 1)
+     if (diceResult === currentBets){
+      moneysettings(CurrentMoneys +  currenttBet)
+     }
+     else{
+
+        moneysettings(CurrentMoneys - currenttBet)
+     }
 }
