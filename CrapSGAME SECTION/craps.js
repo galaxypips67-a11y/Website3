@@ -8,6 +8,9 @@ const CrapswelcomeuserID = "Crapswelcome"
 const CrapuserBetMoney = "CrapsuserBet"
 const CrapsRolldiceanimationns ="Craps-rolldice-animation"
 const crapsrolldicenodisplay = "Craps-Rolldice-button"
+const CrapsBetfinishGridd = "Craps-BetFinisgrid-container"
+const CrapsRoundfinishsection = "Craps-RoundGamefinish-container"
+const CrapsRoundgamemessage = "Craps-Gamemessage"
 
 
 //Graps Game settings
@@ -61,8 +64,8 @@ function ShowCrapssection(){
 
 
 function Crapwelcomeuser (){
+    document.getElementById(CrapsRoundfinishsection).style.display = "none"
     document.getElementById(CrapswelcomeuserID).innerHTML = Crapsuserinput
-     
       moneysettings(setttingmoney)
       roundsettings(setttingrounds)
        beteven()
@@ -147,11 +150,17 @@ function processresult(diceresult){
        diceResult = bet.Odd
      }
   roundsettings(currentRounds + 1)
+  let Roundmessage = ""
      if (diceResult === currentBets){
       moneysettings(CurrentMoneys +  currenttBet)
+       Roundmessage = "YOU WIN"
      }
      else{
 
         moneysettings(CurrentMoneys - currenttBet)
+        Roundmessage = "YOU LOSE 😢"
      }
+     document.getElementById(CrapsBetfinishGridd).style.display = "none"
+      document.getElementById(CrapsRoundfinishsection).style.display = "block"
+      document.getElementById(CrapsRoundgamemessage).innerHTML = Roundmessage
 }
