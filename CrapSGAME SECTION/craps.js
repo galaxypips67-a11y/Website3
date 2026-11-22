@@ -30,6 +30,7 @@ let CurrentMoneys = setttingmoney
 let currentRounds = setttingrounds
 let currentBets = bet.Even
 let currenttBet = MinBet
+let Canchangebet =  true
 
 //GRAPS GAME VARIABLES
 let Crapsuserinput = ""
@@ -58,14 +59,30 @@ function RemoveCrapspanesection(){
 }
 
 
+function ShowCrapspanesection(){
+    document.getElementById(Removesectionpane).style.display = "block"
+}
+
+
+
 function ShowCrapssection(){
     document.getElementById(ShowPanesection).style.display = "block"
 }
 
 
+function hideCrapssection(){
+    document.getElementById(ShowPanesection).style.display = "none"
+}
+
+
+
 function Crapwelcomeuser (){
+   document.getElementById(  crapsrolldicenodisplay).style.display = "block"
+   document.getElementById( CrapsBetfinishGridd).style.display = "block"
+    document.getElementById( CrapsRolldiceanimationns).style.display = "none"
     document.getElementById(CrapsRoundfinishsection).style.display = "none"
     document.getElementById(CrapswelcomeuserID).innerHTML = Crapsuserinput
+    Canchangebet = true
       moneysettings(setttingmoney)
       roundsettings(setttingrounds)
        beteven()
@@ -96,12 +113,12 @@ function betodd(){
 }
 
 function crapschoosebet(betts){
-    currentBets = betts
+    if (Canchangebet){currentBets = betts
     document.getElementById(currentBets).style.backgroundColor = "red"
     const deselct = betts == bet.Even ? bet.Odd : bet.Even
     document.getElementById(deselct).style.backgroundColor = "transparent"
 
-}
+}}
 
 
 function increasebett(){
@@ -115,15 +132,17 @@ function decreasebett(){
 
 
 function setmoney(bett){
-    currenttBet = bett
+    if (Canchangebet){currenttBet = bett
     document.getElementById(CrapuserBetMoney ).innerHTML = "$" + bett
-}
+}}
 
 
 
 function  rolldice(){
     formatdicerolled()
+    Canchangebet =  false
         document.getElementById(crapsrolldicenodisplay ).style.display = "none"
+     document.getElementById(  CrapsRolldiceanimationns).style.display = "block"
     const diceroll = document.getElementById( CrapsRolldiceanimationns)
        rollADie({ element:diceroll, numberOfDice: 2, callback:delayedprocessresult, delay:100000 });
 }
@@ -166,4 +185,10 @@ function processresult(diceresult){
      document.getElementById(CrapsBetfinishGridd).style.display = "none"
       document.getElementById(CrapsRoundfinishsection).style.display = "block"
       document.getElementById(CrapsRoundgamemessage).innerHTML = Roundmessage
+}
+
+function ExitGame(){
+    hideCrapssection();
+     ShowCrapspanesection();
+     document.getElementById(crapsiputsections).value = ""
 }
