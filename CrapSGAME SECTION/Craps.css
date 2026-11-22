@@ -62,9 +62,10 @@
     color: white;
     margin: 20px 0;
      margin-top: calc(var(--height-scale)*0.07);
+    
 }
 
-.Inputsection{
+.Inputsection:focus{
     outline: none;
 }
 
@@ -153,6 +154,26 @@
 }
 
 #Craps-rolldice-animation{
-    margin-top: calc(var(--height-scale)*-0.13);
+    margin-top: calc(var(--height-scale)*-0.01);
       margin-left: calc(var(--height-scale)*-0.20)
+}
+
+.Craps-finishRound-Grid {
+     display: grid;
+    grid-template-columns: 33% auto 33%;
+    border: 1px solid white;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 5px;
+}
+
+#Craps-Gamemessage{
+     border-left: white solid 1px;
+    border-right: 1px solid white;
+}
+
+
+.Craps-finishoddeven-button:hover{
+    cursor: pointer;
+    font-weight: bold;
 }

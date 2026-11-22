@@ -160,6 +160,9 @@ function processresult(diceresult){
         moneysettings(CurrentMoneys - currenttBet)
         Roundmessage = "YOU LOSE 😢"
      }
+     if(CurrentMoneys === 0){
+        Roundmessage = "YOU ARE OUT!"
+     }
      document.getElementById(CrapsBetfinishGridd).style.display = "none"
       document.getElementById(CrapsRoundfinishsection).style.display = "block"
       document.getElementById(CrapsRoundgamemessage).innerHTML = Roundmessage
